@@ -1,0 +1,32 @@
+*{
+  outline: none;
+}
+body {
+    margin: 0;
+    padding-top: 60px;
+    background: black;
+    color: #333;
+    width:100%;
+    height:100%;
+}
+
+a {
+  color: #FFA500;
+}
+
+.label{
+  width:100px;
+}
+
+#videoContainer{
+  margin: auto;
+  width: 854px;
+  height: 480px;
+  display: none;
+}
+
+#modalBoxClick{
+  margin: auto;
+  width:500px;
+  height:200px;
+}

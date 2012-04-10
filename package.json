@@ -1,0 +1,18 @@
+{
+  "name": "twilipop",
+  "version": "0.0.1-16",
+  "private": false,
+  "dependencies": {
+    "request": "2.9.x",
+    "tako": "0.2.x",
+    "twilio": "0.4.x",
+    "express": "2.5.x"
+  },
+  "subdomain": "twilipop",
+  "scripts": {
+    "start": "app.js"
+  },
+  "engines": {
+    "node": "v0.6.x"
+  }
+}
