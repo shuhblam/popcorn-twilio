@@ -9,8 +9,8 @@ app.route('/css/*').files(path.join(__dirname, 'css'));
 app.route('/html/*').files(path.join(__dirname, 'html'));
 
 app.route('/').html(function (req, resp) {
-  req.pipe(request("http://twilipop.nodejitsu.com/html/index.html")).pipe(resp);
-  //req.pipe(request("http://localhost/html/index.html")).pipe(resp);
+  //req.pipe(request("http://twilipop.nodejitsu.com/html/index.html")).pipe(resp);
+  req.pipe(request("http://localhost/html/index.html")).pipe(resp);
 }).methods('GET');
 
 
@@ -25,18 +25,15 @@ app.sockets.on('connection', function (socket) {
   function makeCall(number){
 
     var client = new twilio(
-        'AC265b70115d9b4f64af3e949e36bba368'
-      , 'd75b8d31d685d8339dc966362dec631d'
-      , 'colegillespie.com/video/helloMonkey.php'
+        'you'
+      , 'keys'
+      , 'here'
     );
 
-    var phone = client.getPhoneNumber('+13363106571');
+    var phone = client.getPhoneNumber('any number here');
 
     phone.setup(function() {
         console.log('setup call')
-        // jourdan +19193230388
-        // me skypez '+13363106571'
-        // brett '+4407534144803'
         phone.makeCall(number, null, function(call) { });
 
     });
